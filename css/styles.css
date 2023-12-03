@@ -1,0 +1,15 @@
+.button {
+   display: flex;
+   align-items: flex-start;
+   padding: 16px 32px;
+   gap: 10px;
+   background-color: #819B57;
+   border-radius: 8px;
+   border: 2px solid #819B57;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: transparent;
+   color: #819B57;
+}
