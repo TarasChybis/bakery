@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600;900&family=Roboto&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+}
+
 .button {
    display: flex;
    align-items: flex-start;
