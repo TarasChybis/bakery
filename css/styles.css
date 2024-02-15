@@ -4,26 +4,76 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+:root {
+   --color-brand-light: #819B57;
+   --color-brand-dark: #465929;
+   --color-primary-dark: #31261A;
+   --color-primary-light: #FAF4EA;
+}
+
 body {
    font-family: 'Poppins', sans-serif;
    font-size: 16px;
    font-style: normal;
    font-weight: 300;
    line-height: normal;
+   color: var(--color-primary-dark);
 }
+
+/* ------ button -------- */
 
 .button {
    display: flex;
    align-items: flex-start;
    padding: 16px 32px;
    gap: 10px;
-   background-color: #819B57;
+   color: var(--color-primary-light);
+   background-color: var(--color-brand-light);
    border-radius: 8px;
-   border: 2px solid #819B57;
+   border: 2px solid var(--color-brand-light);
    cursor: pointer;
 }
 
 .button:hover {
    background-color: transparent;
-   color: #819B57;
+   color: var(--color-brand-light);
+}
+
+.button:focus {
+   background-color: aqua;
+}
+
+.button:active {
+   background-color: var(--color-brand-light);
+}
+
+/* ------ link -------- */
+
+.link {
+   color: var(--color-primary-light);
+}
+
+.link:hover {
+   color: var(--color-brand-light);
+}
+
+/* ------ hero-title -------- */
+
+.hero-title {
+   color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+   color: var(--color-brand-light);
+}
+
+.advantages-list {
+   background-color: var(--color-brand-light);
+   color: var(--color-primary-light);
+}
+
+/* ------ section-title -------- */
+
+.section-title {
+   color: var(--color-primary-dark);
 }
