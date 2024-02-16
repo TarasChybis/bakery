@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Gill-Sans-Regular';
+  src: url(./Gill-Sans-Regular.eot);
+  src: url(./Gill-Sans-Regular.eot?#iefix) format('embedded-opentype'),
+       url(./Gill-Sans-Regular.otf) format('otf'),
+       url(./Gill-Sans-Regular.svg#Gill-Sans-Regular) format('svg'),
+       url(./Gill-Sans-Regular.ttf) format('truetype'),
+       url(./Gill-Sans-Regular.woff) format('woff'),
+       url(./Gill-Sans-Regular.woff2) format('woff2');
+}

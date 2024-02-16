@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Gill-Sans-SemiBold';
+  src: url(./Gill-Sans-SemiBold.eot);
+  src: url(./Gill-Sans-SemiBold.eot?#iefix) format('embedded-opentype'),
+       url(./Gill-Sans-SemiBold.otf) format('otf'),
+       url(./Gill-Sans-SemiBold.svg#Gill-Sans-SemiBold) format('svg'),
+       url(./Gill-Sans-SemiBold.ttf) format('truetype'),
+       url(./Gill-Sans-SemiBold.woff) format('woff'),
+       url(./Gill-Sans-SemiBold.woff2) format('woff2');
+}
