@@ -1,200 +1,235 @@
 @font-face {
-  font-family: 'Poppins-Medium';
+  font-family: "Poppins-Medium";
   src: url(../fonts/);
-  src: url(../fonts/Poppins-Medium.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Poppins-Medium.otf) format('otf'),
-       url(../fonts/Poppins-Medium.svg#Poppins-Medium) format('svg'),
-       url(../fonts/Poppins-Medium.ttf) format('truetype'),
-       url(../fonts/Poppins-Medium.woff) format('woff'),
-       url(../fonts/Poppins-Medium.woff2) format('woff2');
+  src: url(../fonts/Poppins-Medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Poppins-Medium.otf) format("otf"),
+    url(../fonts/Poppins-Medium.svg#Poppins-Medium) format("svg"),
+    url(../fonts/Poppins-Medium.ttf) format("truetype"),
+    url(../fonts/Poppins-Medium.woff) format("woff"),
+    url(../fonts/Poppins-Medium.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Poppins-Light';
+  font-family: "Poppins-Light";
   src: url(../fonts/Poppins-Light.eot);
-  src: url(../fonts/Poppins-Light.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Poppins-Light.otf) format('otf'),
-       url(../fonts/Poppins-Light.svg#Poppins-Light) format('svg'),
-       url(../fonts/Poppins-Light.ttf) format('truetype'),
-       url(../fonts/Poppins-Light.woff) format('woff'),
-       url(../fonts/Poppins-Light.woff2) format('woff2');
+  src: url(../fonts/Poppins-Light.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Poppins-Light.otf) format("otf"),
+    url(../fonts/Poppins-Light.svg#Poppins-Light) format("svg"),
+    url(../fonts/Poppins-Light.ttf) format("truetype"),
+    url(../fonts/Poppins-Light.woff) format("woff"),
+    url(../fonts/Poppins-Light.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Poppins-Regular';
+  font-family: "Poppins-Regular";
   src: url(../fonts/Poppins-Regular.eot);
-  src: url(../fonts/Poppins-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Poppins-Regular.otf) format('otf'),
-       url(../fonts/Poppins-Regular.svg#Poppins-Regular) format('svg'),
-       url(../fonts/Poppins-Regular.ttf) format('truetype'),
-       url(../fonts/Poppins-Regular.woff) format('woff'),
-       url(../fonts/Poppins-Regular.woff2) format('woff2');
+  src: url(../fonts/Poppins-Regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Poppins-Regular.otf) format("otf"),
+    url(../fonts/Poppins-Regular.svg#Poppins-Regular) format("svg"),
+    url(../fonts/Poppins-Regular.ttf) format("truetype"),
+    url(../fonts/Poppins-Regular.woff) format("woff"),
+    url(../fonts/Poppins-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Poppins-SemiBold';
+  font-family: "Poppins-SemiBold";
   src: url(../fonts/Poppins-SemiBold.eot);
-  src: url(../fonts/Poppins-SemiBold.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Poppins-SemiBold.otf) format('otf'),
-       url(../fonts/Poppins-SemiBold.svg#Poppins-SemiBold) format('svg'),
-       url(../fonts/Poppins-SemiBold.ttf) format('truetype'),
-       url(../fonts/Poppins-SemiBold.woff) format('woff'),
-       url(../fonts/Poppins-SemiBold.woff2) format('woff2');
+  src: url(../fonts/Poppins-SemiBold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Poppins-SemiBold.otf) format("otf"),
+    url(../fonts/Poppins-SemiBold.svg#Poppins-SemiBold) format("svg"),
+    url(../fonts/Poppins-SemiBold.ttf) format("truetype"),
+    url(../fonts/Poppins-SemiBold.woff) format("woff"),
+    url(../fonts/Poppins-SemiBold.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Poppins-Black';
+  font-family: "Poppins-Black";
   src: url(../fonts/Poppins-Black.eot);
-  src: url(../fonts/Poppins-Black.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Poppins-Black.otf) format('otf'),
-       url(../fonts/Poppins-Black.svg#Poppins-Black) format('svg'),
-       url(../fonts/Poppins-Black.ttf) format('truetype'),
-       url(../fonts/Poppins-Black.woff) format('woff'),
-       url(../fonts/Poppins-Black.woff2) format('woff2');
+  src: url(../fonts/Poppins-Black.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Poppins-Black.otf) format("otf"),
+    url(../fonts/Poppins-Black.svg#Poppins-Black) format("svg"),
+    url(../fonts/Poppins-Black.ttf) format("truetype"),
+    url(../fonts/Poppins-Black.woff) format("woff"),
+    url(../fonts/Poppins-Black.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   src: url(../fonts/Roboto-Regular.eot);
-  src: url(../fonts/Roboto-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Roboto-Regular.otf) format('otf'),
-       url(../fonts/Roboto-Regular.svg#Roboto-Regular) format('svg'),
-       url(../fonts/Roboto-Regular.ttf) format('truetype'),
-       url(../fonts/Roboto-Regular.woff) format('woff'),
-       url(../fonts/Roboto-Regular.woff2) format('woff2');
+  src: url(../fonts/Roboto-Regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Roboto-Regular.otf) format("otf"),
+    url(../fonts/Roboto-Regular.svg#Roboto-Regular) format("svg"),
+    url(../fonts/Roboto-Regular.ttf) format("truetype"),
+    url(../fonts/Roboto-Regular.woff) format("woff"),
+    url(../fonts/Roboto-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Gill-Sans-Bold';
+  font-family: "Gill-Sans-Bold";
   src: url(../fonts/Gill-Sans-Bold.eot);
-  src: url(../fonts/Gill-Sans-Bold.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Gill-Sans-Bold.otf) format('otf'),
-       url(../fonts/Gill-Sans-Bold.svg#Gill-Sans-Bold) format('svg'),
-       url(../fonts/Gill-Sans-Bold.ttf) format('truetype'),
-       url(../fonts/Gill-Sans-Bold.woff) format('woff'),
-       url(../fonts/Gill-Sans-Bold.woff2) format('woff2');
+  src: url(../fonts/Gill-Sans-Bold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Gill-Sans-Bold.otf) format("otf"),
+    url(../fonts/Gill-Sans-Bold.svg#Gill-Sans-Bold) format("svg"),
+    url(../fonts/Gill-Sans-Bold.ttf) format("truetype"),
+    url(../fonts/Gill-Sans-Bold.woff) format("woff"),
+    url(../fonts/Gill-Sans-Bold.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Gill-Sans-Regular';
+  font-family: "Gill-Sans-Regular";
   src: url(../fonts/Gill-Sans-Regular.eot);
-  src: url(../fonts/Gill-Sans-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Gill-Sans-Regular.otf) format('otf'),
-       url(../fonts/Gill-Sans-Regular.svg#Gill-Sans-Regular) format('svg'),
-       url(../fonts/Gill-Sans-Regular.ttf) format('truetype'),
-       url(../fonts/Gill-Sans-Regular.woff) format('woff'),
-       url(../fonts/Gill-Sans-Regular.woff2) format('woff2');
+  src: url(../fonts/Gill-Sans-Regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Gill-Sans-Regular.otf) format("otf"),
+    url(../fonts/Gill-Sans-Regular.svg#Gill-Sans-Regular) format("svg"),
+    url(../fonts/Gill-Sans-Regular.ttf) format("truetype"),
+    url(../fonts/Gill-Sans-Regular.woff) format("woff"),
+    url(../fonts/Gill-Sans-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Gill-Sans-SemiBold';
+  font-family: "Gill-Sans-SemiBold";
   src: url(../fonts/Gill-Sans-SemiBold.eot);
-  src: url(../fonts/Gill-Sans-SemiBold.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Gill-Sans-SemiBold.otf) format('otf'),
-       url(../fonts/Gill-Sans-SemiBold.svg#Gill-Sans-SemiBold) format('svg'),
-       url(../fonts/Gill-Sans-SemiBold.ttf) format('truetype'),
-       url(../fonts/Gill-Sans-SemiBold.woff) format('woff'),
-       url(../fonts/Gill-Sans-SemiBold.woff2) format('woff2');
+  src: url(../fonts/Gill-Sans-SemiBold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Gill-Sans-SemiBold.otf) format("otf"),
+    url(../fonts/Gill-Sans-SemiBold.svg#Gill-Sans-SemiBold) format("svg"),
+    url(../fonts/Gill-Sans-SemiBold.ttf) format("truetype"),
+    url(../fonts/Gill-Sans-SemiBold.woff) format("woff"),
+    url(../fonts/Gill-Sans-SemiBold.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Inter-Regular';
+  font-family: "Inter-Regular";
   src: url(../fonts/Inter-Regular.eot);
-  src: url(../fonts/Inter-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Inter-Regular.otf) format('otf'),
-       url(../fonts/Inter-Regular.svg#Inter-Regular) format('svg'),
-       url(../fonts/Inter-Regular.ttf) format('truetype'),
-       url(../fonts/Inter-Regular.woff) format('woff'),
-       url(../fonts/Inter-Regular.woff2) format('woff2');
+  src: url(../fonts/Inter-Regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Inter-Regular.otf) format("otf"),
+    url(../fonts/Inter-Regular.svg#Inter-Regular) format("svg"),
+    url(../fonts/Inter-Regular.ttf) format("truetype"),
+    url(../fonts/Inter-Regular.woff) format("woff"),
+    url(../fonts/Inter-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   src: url(../fonts/Gilroy-Medium.eot);
-  src: url(../fonts/Gilroy-Medium.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/Gilroy-Medium.otf) format('otf'),
-       url(../fonts/Gilroy-Medium.svg#Gilroy-Medium) format('svg'),
-       url(../fonts/Gilroy-Medium.ttf) format('truetype'),
-       url(../fonts/Gilroy-Medium.woff) format('woff'),
-       url(../fonts/Gilroy-Medium.woff2) format('woff2');
+  src: url(../fonts/Gilroy-Medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Gilroy-Medium.otf) format("otf"),
+    url(../fonts/Gilroy-Medium.svg#Gilroy-Medium) format("svg"),
+    url(../fonts/Gilroy-Medium.ttf) format("truetype"),
+    url(../fonts/Gilroy-Medium.woff) format("woff"),
+    url(../fonts/Gilroy-Medium.woff2) format("woff2");
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600;900&family=Roboto&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600;900&family=Roboto&display=swap"); */
 
 /* font-family: 'Inter', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 :root {
-   --color-brand-light: #819B57;
-   --color-brand-dark: #465929;
-   --color-primary-dark: #31261A;
-   --color-primary-light: #FAF4EA;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
 }
 
 body {
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 300;
-   line-height: normal;
-   color: var(--color-primary-dark);
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--color-primary-dark);
 }
 
-/* ------ button -------- */
+a {
+  color: var(--color-primary-light);
+}
+
+/* ------ header -------- */
+
+.nav-text li {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--color-primary-light);
+}
+
+.nav-text li :hover {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--color-brand-light);
+}
 
 .button {
-   display: flex;
-   align-items: flex-start;
-   padding: 16px 32px;
-   gap: 10px;
-   color: var(--color-primary-light);
-   background-color: var(--color-brand-light);
-   border-radius: 8px;
-   border: 2px solid var(--color-brand-light);
-   cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  background-color: var(--color-brand-light);
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-light);
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--color-primary-light);
+  cursor: pointer;
 }
 
 .button:hover {
-   background-color: transparent;
-   color: var(--color-brand-light);
+  background-color: transparent;
+  color: var(--color-brand-dark);
 }
 
-.button:focus {
-   background-color: aqua;
-}
+/* .button:focus {
+  background-color: aqua;
+} */
 
-.button:active {
-   background-color: var(--color-brand-light);
-}
-
-/* ------ link -------- */
-
-.link {
-   color: var(--color-primary-light);
-}
-
-.link:hover {
-   color: var(--color-brand-light);
-}
+/* .button:active {
+  background-color: var(--color-brand-light);
+} */
 
 /* ------ hero-title -------- */
 
 .hero-title {
-   color: var(--color-primary-light);
+  font-family: "Poppins-Black", sans-serif;
+  font-style: normal;
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 192px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--color-primary-light);
 }
 
 .hero-title .accent {
-   color: var(--color-brand-light);
+  color: var(--color-brand-light);
 }
 
 .advantages-list {
-   background-color: var(--color-brand-light);
-   color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
 }
 
-/* ------ section-title -------- */
+/* ------ traditions-section -------- */
 
 .section-title {
-   color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.brand-color {
+  color: var(--color-brand-light);
 }
