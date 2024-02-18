@@ -135,9 +135,11 @@ font-family: 'Roboto', sans-serif; */
 body {
   font-family: "Poppins-Medium", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
   line-height: 1.5;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-align: left;
   color: var(--color-primary-dark);
 }
 
@@ -151,8 +153,6 @@ a {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0em;
   text-align: center;
   color: var(--color-primary-light);
 }
@@ -161,8 +161,6 @@ a {
   font-family: "Poppins-SemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 0em;
   text-align: center;
   color: var(--color-brand-light);
 }
@@ -178,8 +176,6 @@ a {
   font-family: "Poppins-SemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 0em;
   text-align: center;
   color: var(--color-primary-light);
   cursor: pointer;
@@ -202,11 +198,8 @@ a {
 
 .hero-title {
   font-family: "Poppins-Black", sans-serif;
-  font-style: normal;
   font-size: 128px;
   font-weight: 900;
-  line-height: 1.5;
-  letter-spacing: 0em;
   text-align: center;
   color: var(--color-primary-light);
 }
@@ -219,9 +212,6 @@ a {
   font-family: "Poppins-Light", sans-serif;
   font-size: 20px;
   font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  text-align: left;
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
 }
@@ -235,9 +225,6 @@ a {
   font-family: "Poppins-Black", sans-serif;
   font-size: 64px;
   font-weight: 900;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  text-align: left;
   color: var(--color-primary-dark);
 }
 
@@ -245,9 +232,6 @@ a {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  text-align: left;
   color: var(--color-primary-dark);
 }
 
@@ -267,9 +251,6 @@ a {
   font-family: "Poppins-SemiBold";
   font-size: 40px;
   font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  text-align: left;
   color: var(--color-primary-dark);
 }
 
@@ -277,9 +258,6 @@ a {
   font-family: "Poppins-SemiBold";
   font-size: 24px;
   font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  text-align: left;
   color: var(--color-primary-light);
 }
 
@@ -287,9 +265,6 @@ a {
   font-family: "Poppins-Light";
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  text-align: left;
   color: var(--color-primary-light);
 }
 
@@ -297,7 +272,6 @@ a {
   font-family: "Gilroy-Medium";
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0em;
   text-align: center;
   color: var(--color-primary-dark);
 }
@@ -311,17 +285,13 @@ a {
 .address-text {
   font-family: "Poppins-Medium", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 1.5;
   color: var(--color-primary-light);
 }
 
 .address-text-data {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
   color: #a18268;
 }
