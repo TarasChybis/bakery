@@ -137,7 +137,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.5;
   color: var(--color-primary-dark);
 }
 
@@ -151,7 +151,7 @@ a {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.5;
   letter-spacing: 0em;
   text-align: center;
   color: var(--color-primary-light);
@@ -161,7 +161,7 @@ a {
   font-family: "Poppins-SemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  line-height: 27px;
+  line-height: 1.5;
   letter-spacing: 0em;
   text-align: center;
   color: var(--color-brand-light);
@@ -178,7 +178,7 @@ a {
   font-family: "Poppins-SemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  line-height: 27px;
+  line-height: 1.5;
   letter-spacing: 0em;
   text-align: center;
   color: var(--color-primary-light);
@@ -198,14 +198,14 @@ a {
   background-color: var(--color-brand-light);
 } */
 
-/* ------ hero-title -------- */
+/* ------ hero-section -------- */
 
 .hero-title {
   font-family: "Poppins-Black", sans-serif;
   font-style: normal;
   font-size: 128px;
   font-weight: 900;
-  line-height: 192px;
+  line-height: 1.5;
   letter-spacing: 0em;
   text-align: center;
   color: var(--color-primary-light);
@@ -215,21 +215,113 @@ a {
   color: var(--color-brand-light);
 }
 
-.advantages-list {
-  background-color: var(--color-brand-light);
+.advantages-list li {
+  font-family: "Poppins-Light", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
   color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
 }
 
-/* ------ traditions-section -------- */
+.advantages-list li :hover {
+  font-size: 22px;
+  color: var(--color-brand-dark);
+}
 
 .section-title {
+  font-family: "Poppins-Black", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
   color: var(--color-primary-dark);
+}
+
+.section-text {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-primary-dark);
+}
+
+.brand-color {
+  color: var(--color-brand-light);
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
-.brand-color {
-  color: var(--color-brand-light);
+.bold {
+  font-weight: 600;
+}
+
+.article-title-names {
+  font-family: "Poppins-SemiBold";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-primary-dark);
+}
+
+.article-title-bakeries {
+  font-family: "Poppins-SemiBold";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-primary-light);
+}
+
+.article-text {
+  font-family: "Poppins-Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-primary-light);
+}
+
+.article-little-text {
+  font-family: "Gilroy-Medium";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--color-primary-dark);
+}
+
+.link {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.address-text {
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--color-primary-light);
+}
+
+.address-text-data {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #a18268;
 }
