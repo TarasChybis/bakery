@@ -135,7 +135,7 @@ font-family: 'Roboto', sans-serif; */
 body {
   font-family: "Poppins-Medium", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.5;
   font-style: normal;
   letter-spacing: 0em;
@@ -147,7 +147,12 @@ a {
   color: var(--color-primary-light);
 }
 
-/* ------ header -------- */
+.container {
+  width: 100%;
+  max-width: calc(1250px + 24px + 24px);
+  margin: 0 auto;
+  padding: 0 24px;
+}
 
 .nav-text li {
   font-family: "Poppins-Regular", sans-serif;
@@ -196,11 +201,18 @@ a {
 
 /* ------ hero-section -------- */
 
+.section {
+  padding: 48px 0;
+}
+
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   font-family: "Poppins-Black", sans-serif;
   font-size: 128px;
   font-weight: 900;
-  text-align: center;
   color: var(--color-primary-light);
 }
 
@@ -208,12 +220,16 @@ a {
   color: var(--color-brand-light);
 }
 
+.advantages-list {
+  padding: 16px 0;
+  background-color: var(--color-brand-light);
+}
+
 .advantages-list li {
   font-family: "Poppins-Light", sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: var(--color-primary-light);
-  background-color: var(--color-brand-light);
 }
 
 .advantages-list li :hover {
@@ -221,11 +237,31 @@ a {
   color: var(--color-brand-dark);
 }
 
+.traditions-section {
+  padding-top: 96px;
+}
+
 .section-title {
   font-family: "Poppins-Black", sans-serif;
   font-size: 64px;
   font-weight: 900;
   color: var(--color-primary-dark);
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.chefs-title {
+  margin-bottom: 80px;
+}
+
+.fomats-title {
+  margin-bottom: 80px;
+}
+
+.contact-title {
+  margin-bottom: 42px;
 }
 
 .section-text {
@@ -243,11 +279,12 @@ a {
   text-transform: uppercase;
 }
 
-.bold {
+.semi-bold {
   font-weight: 600;
 }
 
 .article-title-names {
+  margin-bottom: 16px;
   font-family: "Poppins-SemiBold";
   font-size: 40px;
   font-weight: 600;
@@ -255,6 +292,7 @@ a {
 }
 
 .article-title-bakeries {
+  margin-bottom: 16px;
   font-family: "Poppins-SemiBold";
   font-size: 24px;
   font-weight: 600;
@@ -271,7 +309,7 @@ a {
 .article-little-text {
   font-family: "Gilroy-Medium";
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.2;
   text-align: center;
   color: var(--color-primary-dark);
 }
@@ -283,15 +321,23 @@ a {
 }
 
 .address-text {
-  font-family: "Poppins-Medium", sans-serif;
+  font-family: "Poppins-Light", sans-serif;
   font-size: 16px;
   font-weight: 300;
+  text-align: center;
   color: var(--color-primary-light);
+}
+
+.address-text :hover {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-weight: 600;
+  color: var(--color-brand-light);
 }
 
 .address-text-data {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
   color: #a18268;
 }
