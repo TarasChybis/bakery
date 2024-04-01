@@ -130,6 +130,7 @@ font-family: 'Roboto', sans-serif; */
   --color-brand-dark: #465929;
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
+  --color-line: #a18268;
 }
 
 body {
@@ -141,6 +142,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
 }
 
 a {
@@ -154,7 +156,49 @@ a {
   padding: 0 24px;
 }
 
-.nav-text li {
+.section-title {
+  font-family: "Poppins-Black", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 84px;
+  color: var(--color-primary-dark);
+}
+
+.section-text {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--color-primary-dark);
+}
+
+/* ------ header -------- */
+
+header {
+  background-color: var(--color-brand-dark);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-menu li {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -162,7 +206,7 @@ a {
   color: var(--color-primary-light);
 }
 
-.nav-text li :hover {
+.header-menu li :hover {
   font-family: "Poppins-SemiBold", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -186,7 +230,7 @@ a {
   cursor: pointer;
 }
 
-.button:hover {
+.button :hover {
   background-color: transparent;
   color: var(--color-brand-dark);
 }
@@ -206,7 +250,19 @@ a {
 }
 
 .hero-section {
-  padding: 272px 0;
+  background-image: url(../images/title.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.hero-gradient {
+  background-image: linear-gradient(
+    102.76deg,
+    rgba(18, 18, 17, 0.78) 2.03%,
+    rgba(18, 18, 17, 0.6) 58.46%,
+    rgba(18, 18, 17, 0) 90.36%
+  );
 }
 
 .hero-title {
@@ -214,61 +270,182 @@ a {
   font-size: 128px;
   font-weight: 900;
   color: var(--color-primary-light);
+  padding: 272px 0;
 }
 
 .hero-title .accent {
   color: var(--color-brand-light);
 }
 
-.advantages-list {
-  padding: 16px 0;
-  background-color: var(--color-brand-light);
+/* ------ advantages-section -------- */
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-.advantages-list li {
+.advantages-section {
+  background-color: var(--color-brand-light);
+  margin-bottom: 48px;
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.advantages-item {
   font-family: "Poppins-Light", sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: var(--color-primary-light);
 }
 
-.advantages-list li :hover {
+.advantages-item :hover {
   font-size: 22px;
   color: var(--color-brand-dark);
 }
 
-.traditions-section {
-  padding-top: 96px;
+/* ------ traditions-section -------- */
+
+.traditions-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
 }
 
-.section-title {
-  font-family: "Poppins-Black", sans-serif;
-  font-size: 64px;
-  font-weight: 900;
-  color: var(--color-primary-dark);
+.traditions-text {
+  flex-basis: 710px;
 }
 
-.traditions-title {
+.traditions-text .section-title {
   margin-bottom: 42px;
+}
+
+.traditions-text p {
+  margin-bottom: 42px;
+}
+
+.traditions-image {
+  border-color: #d9d9d9;
+  border-radius: 400px 400px 0 0;
+}
+
+/* ------ chefs-section -------- */
+
+.chefs-list {
+  display: flex;
 }
 
 .chefs-title {
+  margin: 0 auto;
   margin-bottom: 80px;
+  max-width: 550px;
+  text-align: center;
 }
 
-.fomats-title {
-  margin-bottom: 80px;
+.chefs-title::before {
+  display: block;
+  width: 352px;
+  top: 145px;
+  left: 16px;
+  border: 2px solid #cfcfbc;
+  content: "";
 }
+
+.chefs-title::after {
+  display: block;
+  width: 352px;
+  top: 145px;
+  left: 904px;
+  border: 2px solid #cfcfbc;
+  content: "";
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-line);
+}
+
+/* ------ formats-section -------- */
+
+.formats-title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.formats-card {
+  border: 1px solid var(--color-primary-light);
+  padding: 24px;
+  height: 444px;
+}
+
+.walrus {
+  background-image: url(../images/PURI1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+/* .formats-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+} */
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  fill: var(--color-primary-dark);
+}
+
+.carousel-arrow {
+  width: 16px;
+  height: 16px;
+  /* fill: var(--color-primary-dark); */
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
+/* .carousel-button:hover .carousel-arrow {
+  fill: var(--color-primary-light);
+} */
+
+/* ------ contact-section -------- */
 
 .contact-title {
   margin-bottom: 42px;
-}
-
-.section-text {
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--color-primary-dark);
 }
 
 .brand-color {
@@ -303,7 +480,8 @@ a {
   font-family: "Poppins-Light";
   font-size: 14px;
   font-weight: 300;
-  color: var(--color-primary-light);
+  /* color: var(--color-primary-light); */
+  color: black;
 }
 
 .article-little-text {
@@ -340,4 +518,24 @@ a {
   font-weight: 400;
   text-align: center;
   color: #a18268;
+}
+
+/* ------ footer -------- */
+
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+  width: 32px;
+  height: 32px;
+}
+
+.address-icon :hover {
+  fill: var(--color-brand-light);
 }
