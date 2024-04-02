@@ -339,10 +339,6 @@ header {
 
 /* ------ chefs-section -------- */
 
-.chefs-list {
-  display: flex;
-}
-
 .chefs-title {
   margin: 0 auto;
   margin-bottom: 80px;
@@ -368,10 +364,50 @@ header {
   content: "";
 }
 
+.chefs-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chefs-card {
+  display: flex;
+  gap: 30px;
+}
+
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-line);
+}
+
+.chefs-article-title {
+  margin-bottom: 16px;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--color-primary-dark);
+}
+
+.chefs-article-text {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-primary-dark);
+}
+
+.chefs-article-text p {
+   margin-bottom: 27px;
+}
+
+.chefs-article-text p:last-child {
+   margin-bottom: 0;
 }
 
 /* ------ formats-section -------- */
@@ -379,6 +415,12 @@ header {
 .formats-title {
   margin-bottom: 80px;
   text-align: center;
+}
+
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
 .formats-list {
@@ -395,6 +437,14 @@ header {
   border: 1px solid var(--color-primary-light);
   padding: 24px;
   height: 444px;
+}
+
+.article-text {
+  font-family: "Poppins-Light";
+  font-size: 14px;
+  font-weight: 300;
+  /* color: var(--color-primary-light); */
+  color: black;
 }
 
 .walrus {
@@ -419,6 +469,7 @@ header {
   justify-content: center;
   width: 44px;
   height: 44px;
+  flex-shrink: 0;
   padding: 0;
   background-color: transparent;
   border-radius: 50%;
@@ -444,8 +495,28 @@ header {
 
 /* ------ contact-section -------- */
 
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-form {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
 .contact-title {
   margin-bottom: 42px;
+}
+
+.contact-map {
+  flex-basis: calc((100% - 32px) / 2);
+  height: 600px;
+  flex-shrink: 0;
+  border-radius: 16px;
 }
 
 .brand-color {
@@ -460,28 +531,12 @@ header {
   font-weight: 600;
 }
 
-.article-title-names {
-  margin-bottom: 16px;
-  font-family: "Poppins-SemiBold";
-  font-size: 40px;
-  font-weight: 600;
-  color: var(--color-primary-dark);
-}
-
 .article-title-bakeries {
   margin-bottom: 16px;
   font-family: "Poppins-SemiBold";
   font-size: 24px;
   font-weight: 600;
   color: var(--color-primary-light);
-}
-
-.article-text {
-  font-family: "Poppins-Light";
-  font-size: 14px;
-  font-weight: 300;
-  /* color: var(--color-primary-light); */
-  color: black;
 }
 
 .article-little-text {
@@ -528,6 +583,40 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list {
+  flex-basis: 50%;
+}
+
+.address-info {
+  flex-basis: 50%;
 }
 
 .address-icon {
