@@ -344,24 +344,27 @@ header {
   margin-bottom: 80px;
   max-width: 550px;
   text-align: center;
+  position: relative;
 }
 
 .chefs-title::before {
   display: block;
   width: 352px;
-  top: 145px;
-  left: 16px;
   border: 2px solid #cfcfbc;
   content: "";
+  position: absolute;
+  left: -360px;
+  bottom: 24px;
 }
 
 .chefs-title::after {
   display: block;
   width: 352px;
-  top: 145px;
-  left: 904px;
   border: 2px solid #cfcfbc;
   content: "";
+  position: absolute;
+  right: -360px;
+  bottom: 24px;
 }
 
 .chefs-list {
