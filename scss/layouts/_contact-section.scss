@@ -1,0 +1,79 @@
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-form-container {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
+.contact-title {
+  margin-bottom: 16px;
+  font-size: 62px;
+}
+
+.contact-form-container p {
+  margin-bottom: 42px;
+  color: var(--color-brand-dark);
+}
+
+.contact-map {
+  flex-basis: calc((100% - 32px) / 2);
+  /* height: 600px; */
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.brand-color {
+  color: var(--color-brand-light);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.article-title-bakeries {
+  margin-bottom: 16px;
+  font-family: "Poppins-SemiBold";
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-primary-normal);
+}
+
+.article-little-text {
+  font-family: "Gilroy-Medium";
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-primary-dark);
+}
+
+.address-text {
+  font-family: "Poppins-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--color-primary-normal);
+}
+
+.address-text:hover {
+  font-family: "Poppins-SemiBold", sans-serif;
+  /* font-weight: 600; */
+  color: var(--color-brand-dark);
+}
+
+.address-text-data {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-secondary-light);
+}

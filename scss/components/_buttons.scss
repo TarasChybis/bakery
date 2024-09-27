@@ -1,0 +1,47 @@
+.button {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  background-color: var(--color-brand-light);
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-light);
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-primary-normal);
+  cursor: pointer;
+}
+
+/* .button[disabled] {
+  color: gray;
+  background-color: lightgrey;
+} */
+
+/* .button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+  border-color: currentColor;
+} */
+
+/* .button:focus {
+  background-color: aqua;
+} */
+
+/* .button:active {
+  background-color: var(--color-brand-light);
+} */
+
+
+// ---------- modal -----------
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
@@ -17,24 +17,26 @@
               <img src="./images/logo.svg" alt="logo" />
             </a>
             <ul class="header-menu">
-              <li><a href="#traditions-section">Наші традиції</a></li>
-              <li><a href="#chefs-section">Шеф-кухарі</a></li>
-              <li><a href="#formats-section">Формати</a></li>
-              <li><a href="#contact-section">Контакти</a></li>
+              <li class="link">
+                <a href="#traditions-section">Наші традиції</a>
+              </li>
+              <li class="link"><a href="#chefs-section">Шеф-кухарі</a></li>
+              <li class="link"><a href="#formats-section">Формати</a></li>
+              <li class="link"><a href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-gradient">
-          <div class="container">
-            <h1 class="hero-title">
-              <span class="accent">Сучасна</span> пекарня
-            </h1>
-          </div>
+        <div class="container">
+          <h1 class="hero-title">
+            <span class="accent">Сучасна</span> пекарня
+          </h1>
         </div>
       </section>
       <section class="advantages-section">
@@ -84,8 +86,9 @@
       </section>
       <section class="section chefs-section" id="chefs-section">
         <div class="container">
-          <h2 class="section-title chefs-title">
-            Наші найкращі <span class="brand-color">шеф-кухарі</span>
+          <h2 class="section-title centered chefs-title">
+            Наші найкращі <br />
+            <span class="brand-color">шеф-кухарі</span>
           </h2>
           <ul class="section-text chefs-list">
             <li class="chefs-item">
@@ -140,16 +143,21 @@
       </section>
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="section-title formats-title">Формати</h2>
+          <h2 class="section-title centered formats-title">Формати</h2>
           <div class="formats-container">
             <button class="carousel-button" type="button">
-              <svg class="carousel-arrow">
+              <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons-sprite.svg#icon-arrow"></use>
               </svg>
             </button>
             <ul class="formats-list">
               <li class="formats-item">
-                <article class="formats-card walrus">
+                <article class="formats-card">
+                  <img
+                    class="format-image"
+                    src="./images/PURI1.jpg"
+                    alt="Walrus"
+                  />
                   <h4 class="article-title-bakeries" lang="en">Walrus</h4>
                   <ul class="article-text">
                     <li>Площа: до 120 м&sup2;</li>
@@ -164,6 +172,11 @@
               </li>
               <li class="formats-item">
                 <article class="formats-card">
+                  <img
+                    class="format-image"
+                    src="./images/PURI2.jpg"
+                    alt="Horseshoe"
+                  />
                   <h4 class="article-title-bakeries" lang="en">Horseshoe</h4>
                   <ul class="article-text">
                     <li>Площа: до 25 м&sup2;</li>
@@ -177,6 +190,11 @@
               </li>
               <li class="formats-item">
                 <article class="formats-card">
+                  <img
+                    class="format-image"
+                    src="./images/PURI3.jpg"
+                    alt="Handlebar"
+                  />
                   <h4 class="article-title-bakeries" lang="en">Handlebar</h4>
                   <ul class="article-text">
                     <li>Площа: до 15 м&sup2;</li>
@@ -187,8 +205,8 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
-              <svg class="carousel-arrow">
+            <button class="carousel-button next" type="button">
+              <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons-sprite.svg#icon-arrow"></use>
               </svg>
             </button>
@@ -198,28 +216,65 @@
       <section class="section contact-section" id="contact-section">
         <div class="container">
           <div class="contact-container">
-            <div class="contact-form">
+            <div class="contact-form-container">
               <h2 class="section-title contact-title">
                 Приєднуйся до мережі пекарень
               </h2>
               <p class="section-text">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <form action="/">
-                <label for="name">Name:</label>
-                <input type="text" value="Ім'я" />
-                <label for="tel">Phone:</label>
-                <input type="tel:" />
-                <label for="email">Email:</label>
-                <input type="mail" />
+              <form name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Ім'я</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ім'я"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel:"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="button form-button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-text">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-text" href="#" target="_blank"
+                    >з політикою конфіденційності</a
+                  >
+                </p>
               </form>
-              <button class="button" type="submit">Замовити дзвінок</button>
-              <p class="article-little-text">
-                Натискаючи на кнопку я погоджуюсь
-                <a class="link" href="/" target="_blank"
-                  >з політикою конфіденційності</a
-                >
-              </p>
             </div>
             <iframe
               class="contact-map"
@@ -253,29 +308,36 @@
           </nav>
           <address class="footer-address">
             <ul class="address-list">
-              <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+              <li>
+                <a class="address-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
               <li lang="en">
-                <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
               </li>
               <li>
                 <a
+                  class="address-link"
                   href="https://maps.app.goo.gl/jxz8nroeP9KBY1YF8"
                   target="_blank"
                 >
                   Україна, м. Київ, <br />
-                  вул. Січових Стрільців 54</a
-                >
+                  вул. Січових Стрільців 54
+                </a>
               </li>
               <li lang="en">
                 <a href="#">
-                  <svg class="address-icon">
+                  <svg class="address-icon" width="32" haight="32">
                     <use href="./images/icons-sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li lang="en">
                 <a href="#">
-                  <svg class="address-icon">
+                  <svg class="address-icon" width="32" haight="32">
                     <use href="./images/icons-sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -283,7 +345,9 @@
             </ul>
             <div class="address-info">
               <p class="address-text">
-                <a href="#" target="_blank">Політика конфіденційності</a>
+                <a class="address-link" href="#" target="_blank"
+                  >Політика конфіденційності</a
+                >
               </p>
               <p class="address-text-data">© 2022 Дані захищені</p>
               <a href="./test.html" target="_blank">test</a>
@@ -292,9 +356,67 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+
+    <div class="backdrop is-hidden">
       <div class="modal">
-         <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="section-title centered">Замовити дзвінок</h2>
+        <p class="section-text centered">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Ім'я</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+          <button class="button form-button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-text">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-text" href="#" target="_blank"
+              >з політикою конфіденційності</a
+            >
+          </p>
+        </form>
       </div>
     </div>
 
