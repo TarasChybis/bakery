@@ -6,3 +6,23 @@
   height: 1px;
   overflow: hidden;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.color-brand-light {
+  color: var(--color-brand-light);
+}
+
+.color-brand-dark {
+  color: var(--color-brand-dark);
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.centered {
+  text-align: center;
+}

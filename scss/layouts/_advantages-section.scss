@@ -2,22 +2,21 @@
   background-color: var(--color-brand-light);
   margin-bottom: 48px;
   padding: 16px 0;
-}
 
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
 
-.advantages-item {
-  font-family: "Poppins-Light", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  color: var(--color-primary-normal);
-}
+  &__item {
+    font-family: "Poppins-Light", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-primary-normal);
+  }
 
-.advantages-item :hover {
-  font-size: 22px;
-  color: var(--color-brand-dark);
+  &__item :hover {
+    color: var(--color-brand-dark);
+  }
 }

@@ -1,22 +1,22 @@
-.traditions-container {
+.traditions-content {
   display: flex;
   gap: 40px;
   justify-content: space-between;
-}
 
-.traditions-text {
-  flex-basis: 710px;
-}
+  &__text {
+    flex-basis: 710px;
+  }
 
-.traditions-text .section-title {
-  margin-bottom: 42px;
-}
+  &__text .section__title {
+    margin-bottom: 42px;
+  }
 
-.traditions-text p {
-  margin-bottom: 42px;
-}
+  &__text p {
+    margin-bottom: 42px;
+  }
 
-.traditions-image {
-  border-color: var(--color-secondary-light);
-  border-radius: 400px 400px 0 0;
+  &__image {
+    border-color: var(--color-secondary-light);
+    border-radius: 400px 400px 0 0;
+  }
 }
