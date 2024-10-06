@@ -6,105 +6,104 @@
   background-position: center;
   padding: 32px 0;
   position: relative;
-}
 
-.footer::before {
-  content: "";
-  background-image: url(../images/decor-bread-small.png);
-  width: 180px;
-  height: 120px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
+  &::before {
+    content: "";
+    background-image: url(../images/decor-bread-small.png);
+    width: 180px;
+    height: 120px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 
-.footer::after {
-  content: "";
-  background-image: url(../images/decor-bread-large.png);
-  width: 380px;
-  height: 190px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
+  &::after {
+    content: "";
+    background-image: url(../images/decor-bread-large.png);
+    width: 380px;
+    height: 190px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
 
-.footer-nav {
-  flex-basis: 50%;
-  display: flex;
-  gap: 20px;
-}
+  &__nav {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+  }
 
-.footer-address {
-  flex-basis: 50%;
-  display: flex;
-  gap: 20px;
-}
+  &__logo {
+    flex-grow: 1;
+  }
 
-.footer-logo {
-  flex-grow: 1;
-}
+  &__menu {
+    flex-grow: 1;
+  }
 
-.footer-menu {
-  flex-grow: 1;
-}
+  &__address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+  }
 
-.address-list {
-  flex-basis: 50%;
-}
+  &__address-list {
+    flex-basis: 50%;
+  }
 
-.address-info {
-  flex-basis: 50%;
-}
+  &__address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+  }
 
-.address-link {
-  color: var(--color-primary-light);
-  font-size: 16px;
-  font-weight: 300;
-  text-decoration: none;
-}
+  &__address-link:hover {
+    color: var(--color-brand-dark);
+  }
 
-.address-link:hover {
-  color: var(--color-brand-dark);
-}
+  &__address-icon {
+    fill: var(--color-primary-normal);
+    /* stroke: green; */
+    width: 32px;
+    height: 32px;
+  }
 
-.address-icon {
-  fill: var(--color-primary-normal);
-  /* stroke: green; */
-  width: 32px;
-  height: 32px;
-}
+  &__address-icon:hover {
+    fill: var(--color-brand-light);
+  }
 
-.address-icon:hover {
-  fill: var(--color-brand-light);
-}
+  &__address-info {
+    flex-basis: 50%;
+  }
 
-.address-text {
-  font-family: "Poppins-Light", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  text-align: center;
-  color: var(--color-primary-normal);
-}
+  &__address-text {
+    font-family: "Poppins-Light", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-primary-normal);
+  }
 
-.address-text:hover {
-  font-family: "Poppins-SemiBold", sans-serif;
-  /* font-weight: 600; */
-  color: var(--color-brand-dark);
-}
+  &__address-text:hover {
+    font-family: "Poppins-SemiBold", sans-serif;
+    /* font-weight: 600; */
+    color: var(--color-brand-dark);
+  }
 
-.address-text-data {
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  color: var(--color-secondary-light);
+  &__address-text-data {
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-secondary-light);
+  }
 }
