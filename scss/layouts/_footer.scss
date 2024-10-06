@@ -86,3 +86,25 @@
 .address-icon:hover {
   fill: var(--color-brand-light);
 }
+
+.address-text {
+  font-family: "Poppins-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--color-primary-normal);
+}
+
+.address-text:hover {
+  font-family: "Poppins-SemiBold", sans-serif;
+  /* font-weight: 600; */
+  color: var(--color-brand-dark);
+}
+
+.address-text-data {
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-secondary-light);
+}

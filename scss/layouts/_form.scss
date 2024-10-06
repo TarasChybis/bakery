@@ -55,4 +55,6 @@ a.form-text {
   display: block;
   text-decoration: underline;
   text-underline-offset: 2px;
+  cursor: pointer;
+  transition: color 0.3s;
 }

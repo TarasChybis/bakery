@@ -1,0 +1,35 @@
+.chef-card {
+  display: flex;
+  gap: 30px;
+
+  &__photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-normal),
+      -16px 16px 0 2px var(--color-secondary-light);
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--color-primary-dark);
+  }
+
+  &__text {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-primary-dark);
+  }
+
+  &__text {
+    margin-bottom: 27px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

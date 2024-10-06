@@ -1,0 +1,38 @@
+.input {
+  &__label {
+    display: block;
+    /* position: absolute;
+   top: 16px;
+   left: 32px;
+   transition: transform 0.3s; */
+  }
+
+  /* .form-field:focus-within .form-label {
+      transform: translate(-36px -40px);
+} */
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--color-secondary-light);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.17;
+    background-color: transparent;
+  }
+
+  &__control:focus {
+    border-color: var(--color-brand-light);
+    outline: none;
+  }
+
+  &__control::placeholder {
+    color: var(--color-secondary-light);
+    font-size: 16px;
+    line-height: 1.17;
+  }
+
+  &__control:focus::placeholder {
+    color: var(--color-primary-dark);
+  }
+}
