@@ -29,19 +29,38 @@
   background-color: var(--color-primary-normal);
   position: relative;
   overflow-y: auto;
+
+  &__title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 72px;
+
+    &--color-brand-dark {
+      color: var(--color-brand-dark);
+    }
+  }
+
+  &__form-field {
+    /* position: relative; */
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 24px;
+  }
+
+  &__button:hover {
+    background-color: transparent;
+    color: var(--color-brand-dark);
+  }
 }
 
-.modal-btn-close {
+.modal-button-close {
   position: absolute;
   top: 40px;
   right: 40px;
-}
-
-.modal .section__title {
-  font-size: 60px;
-  text-align: center;
-}
-
-.modal .section__text {
-  margin-bottom: 72px;
 }

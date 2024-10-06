@@ -1,8 +1,17 @@
 @import "./_reset.scss";
+@import "./_base.scss";
 @import "./utils/_fonts.scss";
 @import "./utils/_variables.scss";
 @import "./utils/_utils.scss";
-@import "./_base.scss";
+
+@import "./components/_buttons.scss";
+@import "./components/_carousel-buttons.scss";
+@import "./components/_links.scss";
+@import "./components/_chef-card.scss";
+@import "./components/_format-card.scss";
+@import "./components/_input.scss";
+@import "./components/_form-terms.scss";
+
 @import "./layouts/_header.scss";
 @import "./layouts/_container.scss";
 @import "./layouts/_section.scss";
@@ -14,11 +23,3 @@
 @import "./layouts/_contact-section.scss";
 @import "./layouts/_footer.scss";
 @import "./layouts/_modal.scss";
-@import "./layouts/_form.scss";
-@import "./components/_buttons.scss";
-@import "./components/_links.scss";
-@import "./components/_carousel-buttons.scss";
-@import "./components/_chef-card.scss";
-@import "./components/_format-card.scss";
-@import "./components/_input.scss";
-@import "./components/_form-terms.scss";

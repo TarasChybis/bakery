@@ -25,7 +25,7 @@
               <li class="link"><a href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="button modal-button-open" type="button">
             Замовити дзвінок
           </button>
         </div>
@@ -360,18 +360,18 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
-        <h2 class="section__title centered">Замовити дзвінок</h2>
-        <p class="section__text centered">
+        <button class="modal-button-close" type="button">Close</button>
+        <h2 class="section__title modal__title centered">Замовити дзвінок</h2>
+        <p class="section__text modal__text modal__text--color-brand-dark centered">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
         <form name="modal-form" autocomplete="off">
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-name"
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name"
               >Ім'я</label
             >
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               name="user-name"
               id="user-name"
@@ -381,12 +381,12 @@
               required
             />
           </div>
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-tel"
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel"
               >Телефон</label
             >
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               name="user-tel"
               id="user-tel"
@@ -395,12 +395,12 @@
               required
             />
           </div>
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-email"
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email"
               >Електронна пошта</label
             >
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               name="user-email"
               id="user-email"
@@ -408,12 +408,12 @@
               required
             />
           </div>
-          <button class="button form-button" type="submit">
+          <button class="button modal__button" type="submit">
             Замовити дзвінок
           </button>
-          <p class="form-text">
+          <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-text" href="#" target="_blank"
+            <a class="form-terms__link" href="#" target="_blank"
               >з політикою конфіденційності</a
             >
           </p>
