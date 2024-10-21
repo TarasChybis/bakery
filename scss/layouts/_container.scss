@@ -2,5 +2,9 @@
   width: 100%;
   max-width: calc(1250px + 24px + 24px);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 0 20px;
+  }
 }
