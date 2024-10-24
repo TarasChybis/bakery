@@ -1,7 +1,7 @@
 .chefs-section {
   &__title {
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 24px;
     /* max-width: 550px; */
     text-align: center;
     position: relative;
@@ -10,38 +10,60 @@
       color: var(--color-brand-dark);
     }
 
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 80px;
+    }
+
     &::before {
-      content: "";
-      display: block;
-      width: 352px;
-      /* height: 2px;
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        content: "";
+        display: block;
+        width: 352px;
+        /* height: 2px;
     background-color: var(--color-primary-light); */
-      border: 2px solid var(--color-primary-light);
-      position: absolute;
-      /* left: -360px; */
-      left: 0;
-      bottom: 24px;
+        border: 2px solid var(--color-primary-light);
+        position: absolute;
+        /* left: -360px; */
+        left: 0;
+        bottom: 24px;
+      }
     }
 
     &::after {
-      content: "";
-      display: block;
-      width: 352px;
-      border: 2px solid var(--color-primary-light);
-      position: absolute;
-      /* right: -360px; */
-      right: 0;
-      bottom: 24px;
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        content: "";
+        display: block;
+        width: 352px;
+        border: 2px solid var(--color-primary-light);
+        position: absolute;
+        /* right: -360px; */
+        right: 0;
+        bottom: 24px;
+      }
     }
   }
 
   &__list {
     display: flex;
-    gap: 40px 30px;
+    gap: 20px;
     flex-wrap: wrap;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 40px 30px;
+    }
   }
 
   &__item {
-    flex-basis: calc((100% - 30px) / 2);
+    flex-basis: 100%;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 }
