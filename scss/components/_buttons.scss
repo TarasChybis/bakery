@@ -2,17 +2,23 @@
   //   display: flex;
   //   align-items: flex-start;
   display: block;
-  padding: 16px 32px;
+  font-size: 16px;
+  padding: 10px 24px;
   gap: 10px;
   background-color: var(--color-brand-light);
   border-radius: 8px;
   border: 2px solid var(--color-brand-light);
   font-family: "Poppins-SemiBold", sans-serif;
-  font-size: 18px;
   font-weight: 600;
   text-align: center;
   color: var(--color-primary-normal);
   cursor: pointer;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 16px 32px;
+  }
 }
 
 /* .button[disabled] {
