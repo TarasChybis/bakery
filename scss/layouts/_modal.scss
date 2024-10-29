@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px;
   transition: opacity 0.3s, visibility 0.3s;
 
   &.is-hidden {
@@ -25,18 +25,32 @@
   height: 100%;
   max-height: 880px;
   border-radius: 32px;
-  padding: 70px 128px 70px 128px;
+  padding: 20px;
   background-color: var(--color-primary-normal);
   position: relative;
   overflow-y: auto;
 
+  @media screen and (min-width: $bp-tablet) {
+    padding: 70px 128px 70px 128px;
+  }
+
   &__title {
-    font-size: 60px;
+    font-size: 30px;
     text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 60px;
+    }
   }
 
   &__text {
-    margin-bottom: 72px;
+    margin-bottom: 32px;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 72px;
+      font-size: 16px;
+    }
 
     &--color-brand-dark {
       color: var(--color-brand-dark);
