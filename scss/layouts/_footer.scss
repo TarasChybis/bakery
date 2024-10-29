@@ -6,68 +6,167 @@
   background-position: center;
   padding: 32px 0;
   position: relative;
+  text-align: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    text-align: left;
+  }
 
   &::before {
     content: "";
-    background-image: url(../images/decor-bread-small.png);
-    width: 180px;
-    height: 120px;
+    background-image: url(../images/decor-bread-left_mobile.png);
+    width: 92px;
+    height: 196px;
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -7.7px;
+    bottom: 260px;
+    rotate: 6.5deg;
+
+    @media screen and (min-width: $bp-tablet) {
+      background-image: url(../images/decor-bread-left_tablet.png);
+      width: 180px;
+      height: 120px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      rotate: 0deg;
+    }
   }
 
   &::after {
     content: "";
-    background-image: url(../images/decor-bread-large.png);
-    width: 380px;
-    height: 190px;
+    background-image: url(../images/decor-bread-right_mobile.png);
+    width: 110px;
+    height: 120px;
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -22px;
+
+    @media screen and (min-width: $bp-tablet) {
+      background-image: url(../images/decor-bread-right_tablet.png);
+      width: 380px;
+      height: 190px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   &__container {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+      // flex-basis: 50%;
+    }
   }
 
   &__nav {
-    flex-basis: 50%;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+      flex-basis: 50%;
+    }
   }
 
   &__logo {
-    flex-grow: 1;
+    margin-bottom: 32px;
+
+    img {
+      max-width: 72px;
+      max-height: 38px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 1;
+      flex-basis: 25%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 
   &__menu {
     flex-grow: 1;
+    font-family: "Poppins", sans-serif;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 25%;
+    }
+
+    li {
+      font-size: 14px;
+      margin-bottom: 18px;
+
+      @media screen and (min-width: $bp-tablet) {
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+    }
   }
 
   &__address {
-    flex-basis: 50%;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+      flex-basis: 50%;
+    }
   }
 
-  &__address-list {
-    flex-basis: 50%;
+  &__address-contacts {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 1;
+      flex-basis: 25%;
+    }
   }
 
   &__address-link {
     color: var(--color-primary-light);
-    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-bottom: 18px;
     font-weight: 300;
+    font-style: normal;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
   }
 
   &__address-link:hover {
     color: var(--color-brand-dark);
+  }
+
+  &__address-social {
+    display: flex;
+    gap: 20px;
+    align-self: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      align-self: flex-start;
+    }
   }
 
   &__address-icon {
@@ -82,7 +181,13 @@
   }
 
   &__address-info {
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 1;
+      flex-basis: 25%;
+    }
   }
 
   &__address-text {
